@@ -1,0 +1,70 @@
+@import "../variables";
+
+.bg-succes {
+    background-image: url("../../../public/images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-top: 60px;
+    height: 100vh;
+}
+
+.succes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    gap: 24px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 24px;
+    max-inline-size: 640px !important;
+    margin: auto;
+
+    img {
+        width: 100px;
+    }
+
+    h1 {
+        font-family: "Manrope";
+        color: $azulCoolx;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: "Manrope";
+        color: $azulCoolx;
+        text-align: center;
+    }
+}
+
+.button-succes {
+    height: 20%;
+    color: #ffffff;
+    background-color: $azulClaroCoolx !important;
+    border-radius: 80px !important;
+    border: none !important;
+    padding: 12px 24px;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .bg-succes {
+        padding-inline: 5px;
+        height: 105vh;
+
+        .succes-container {
+            max-inline-size: 95vw !important;
+            padding: 3rem !important;
+            gap: 1rem !important;
+
+            .succes-emoticono {
+                text-align: center;
+            }
+        }
+    }
+}

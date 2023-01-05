@@ -1,0 +1,77 @@
+@import "../variables";
+
+.required {
+  background-color: white;
+  margin-top: 16px !important;
+  border-radius: 10px;
+  padding: 24px !important;
+  box-shadow: 0px 2px 2px 0px #00000052;
+
+  .tituloVerific {
+    color: $azulCoolx;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .adicional,
+  .verificable {
+    display: flex;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+    }
+
+    .check {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 8px;
+
+      p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        color: $azulCoolx;
+      }
+
+      img {
+        margin-left: 10px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+.permanencia {
+  display: flex;
+  margin-top: 17px;
+  margin-bottom: 17px;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .check {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8px;
+
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      color: $azulCoolx;
+    }
+
+    img {
+      margin-left: 10px;
+      height: 14px;
+    }
+  }
+}

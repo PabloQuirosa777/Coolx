@@ -1,0 +1,134 @@
+@import "./mixin";
+@import "../variables";
+
+.adm-proj-state-header {
+  margin-top: 27px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $azulCoolx;
+  }
+}
+
+.barra-busq-user {
+  padding: 12px;
+}
+
+.table-allusers {
+  border: 1px solid rgb(206, 212, 218) !important;
+
+  thead {
+    background-color: $azulCoolx;
+  }
+
+  th {
+    color: white;
+  }
+
+  .info-users,
+  .edit-users,
+  .close-modal {
+    @include buttons-tables;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .info-users:hover,
+  .edit-users:hover,
+  .close-modar:hover {
+    @include hover-buttons-tables;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .name-user-table,
+  .nif-user-table,
+  .country-user-table,
+  .list-item-table,
+  .email-user-table {
+    display: none !important;
+  }
+
+  .edit-users {
+    background-image: url("../../../public/assets/icons/edit_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .info-users {
+    background-image: url("../../../public/assets/icons/info_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  .name-user-table,
+  .nif-user-table,
+  .country-user-table,
+  .list-item-table,
+  .email-user-table {
+    display: none !important;
+  }
+
+  .edit-users {
+    background-image: url("../../../public/assets/icons/edit_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .info-users {
+    background-image: url("../../../public/assets/icons/info_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 967px) {
+
+  .nif-user-table,
+  .country-user-table,
+  .email-user-table {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .nif-user-table,
+  .email-user-table {
+    display: none !important;
+  }
+}

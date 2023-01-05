@@ -1,0 +1,33 @@
+.wrapperProject {
+  max-inline-size: 1200px;
+  padding-inline: 15px;
+  padding-top: 60px;
+  margin: auto;
+  background-color: #f2f4f6;
+}
+
+.projectCard {
+  padding: 24px 15px;
+
+  .title-project {
+    display: flex;
+    align-items: center;
+
+    a:hover {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 24px;
+    color: #09427d;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapperProject {
+    padding-inline: 0px;
+  }
+}

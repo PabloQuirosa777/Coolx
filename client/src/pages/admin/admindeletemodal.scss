@@ -1,0 +1,12 @@
+@import "./mixin";
+
+.delete-project-modal,
+.exit-modal {
+    @include buttons-tables;
+}
+
+.delete-project-modal:hover,
+.exit-modal:hover {
+    @include hover-buttons-tables;
+
+}

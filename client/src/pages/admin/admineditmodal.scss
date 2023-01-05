@@ -1,0 +1,41 @@
+@import "./mixin";
+
+.edit-project-modal {
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 24px;
+    padding: 20px;
+
+    .labels {
+        font-weight: bold;
+    }
+}
+
+.save-edit-admin,
+.exit-edit-admin {
+    @include buttons-tables;
+
+}
+
+.save-edit-admin:hover,
+.exit-edit-admin:hover {
+    @include hover-buttons-tables;
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .modal-dialog {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-top: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .modal-dialog {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-top: 25px !important;
+    }
+}

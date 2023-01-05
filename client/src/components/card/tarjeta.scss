@@ -1,0 +1,187 @@
+@import "../variables";
+
+.project-card-container {
+  margin-bottom: 24px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  min-height: 245px;
+  min-inline-size: 670px !important;
+
+  .card-img {
+    padding: 0px;
+    width: 214px;
+    height: 214px;
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .card-information {
+
+    .p-card-title {
+      padding-left: 23px;
+
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: $azulCoolx;
+      }
+    }
+
+    .p-card-text {
+      display: flex;
+      align-items: center;
+      padding-left: 23px;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #000000;
+        margin: 0px;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+      }
+    }
+
+    .p-card-profit {
+      width: 100%;
+      padding-left: 23px;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin: 0px;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+      }
+
+      .project-pic {
+        width: 55px !important;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+
+    .p-card-button {
+      width: 100%;
+      padding-block: 12px;
+      border-radius: 80px;
+      background-color: $azulCoolxClaro;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      text-align: center;
+    }
+
+    .p-card-button:hover {
+      background-color: white !important;
+      color: $azulCoolx !important;
+      box-shadow: inset 0 0 0 2px $azulCoolxClaro;
+    }
+
+    .p-card-status {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 140%;
+      margin: 0px;
+      color: $azulCoolx;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .project-card-container {
+    min-height: auto !important;
+
+
+    .card-img {
+      display: none !important;
+    }
+
+    .card-information {
+      .p-card-profit {
+        display: none !important;
+      }
+
+      hr {
+        display: inherit !important;
+      }
+
+      .btn-direction {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+
+        .p-card-button {
+          width: 100% !important;
+        }
+
+        .p-card-status {
+          margin: auto !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .project-card-container {
+    min-inline-size: 0px !important;
+
+    .card-img {
+      width: clamp(4vw, 12vw, 214px);
+      height: clamp(4vw, 12vw, 214px);
+    }
+  }
+
+  .card-information {
+    .p-card-profit {
+      div {
+        justify-content: end !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .project-card-container {
+    min-inline-size: 0px !important;
+
+    .card-information {
+      .btn-direction {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .p-card-status {
+          padding: 0px !important;
+        }
+      }
+    }
+  }
+}

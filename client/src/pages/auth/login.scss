@@ -1,0 +1,141 @@
+@import "../variables";
+
+.fondo-login {
+  height: 100vh;
+  background-image: url("../../../public/images/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.contAuth-login {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 524px;
+}
+
+.titulo-Login {
+  p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+}
+
+.subtitulo-login {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.formAuth-login {
+  display: flex;
+  flex-direction: column;
+
+  .label-login {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+
+  .m-2 {
+    border-radius: 4px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: right;
+    margin-bottom: 24px;
+  }
+
+  .in1,
+  .in2 {
+    border-radius: 4px;
+    border: none;
+  }
+
+  .in2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.boton-login {
+  padding: 12px 24px;
+  width: 100%;
+  height: 44px;
+  border-radius: 24px !important;
+  border: none !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 140% !important;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.bl-disabled {
+  background-color: $fondoClaro !important;
+}
+
+.show-bl {
+  background: $azulClaroCoolx !important;
+}
+
+.show-bl:hover {
+  background-color: white !important;
+  color: $azulCoolx !important;
+}
+
+.nada-juntos {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    margin: 0px;
+  }
+
+  .nada-nada {
+    border: none !important;
+    background-color: transparent;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 140% !important;
+  }
+
+  .nada-nada:hover {
+    background-color: transparent !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contAuth-login {
+    max-width: 90vw !important;
+    min-height: calc(100vh - 150px);
+    padding-inline: 15px !important;
+    margin-bottom: 6rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

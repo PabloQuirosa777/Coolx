@@ -1,0 +1,83 @@
+@import "../variables";
+
+.register-bg {
+  height: 100vh;
+  background-image: url("../../../public/images/fondo.jpg");
+  background-position: top;
+  background-size: cover;
+  color: white;
+  overflow-y: hidden;
+  padding-top: 60px;
+
+  .form-bg {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 24px;
+    max-width: 500px;
+    padding: 40px;
+
+    .col-form {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .message-form,
+    .labels-form {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .message-form {
+      margin-top: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .textarea-form {
+      padding-top: 10px !important;
+    }
+
+    .button-form {
+      font-size: 14px;
+      font-weight: bold;
+      width: 100%;
+      border-radius: 25px;
+      margin-top: 18px;
+      padding-block: 12px;
+      border: none;
+    }
+
+    .bf-disabled {
+      background-color: $fondoClaro;
+    }
+
+    .show-bf {
+      background: $azulClaroCoolx;
+    }
+
+    .show-bf:hover {
+      background-color: white !important;
+      color: $azulCoolx !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .register-bg {
+    overflow-y: auto;
+
+    .form-bg {
+      max-width: 90vw !important;
+      min-height: calc(100vh - 150px);
+      padding-inline: 15px !important;
+      margin-bottom: 6rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "./mixin";
+
+.exit-company-modal,
+.assign-company-modal {
+    @include buttons-tables;
+}
+
+.exit-company-modal:hover,
+.assign-company-modal:hover {
+    @include hover-buttons-tables;
+}

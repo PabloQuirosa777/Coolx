@@ -1,0 +1,221 @@
+@import "./mixin";
+@import "../variables";
+
+.adm-proj-state-header {
+  display: flex;
+  align-items: center;
+  padding-top: 27px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $azulCoolx;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  button:hover {
+    background-color: transparent !important;
+  }
+}
+
+.list-text {
+  p {
+    margin: 0px;
+  }
+}
+
+.status-col {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .pen-status {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px;
+
+    img {
+      height: 1rem !important;
+    }
+  }
+}
+
+.table-projects {
+  background-color: $azulCoolx !important;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  th {
+    background-color: $azulCoolx !important;
+    color: white;
+    vertical-align: text-top;
+  }
+}
+
+.list-text {
+  border: 1px solid rgb(206, 212, 218) !important;
+
+  .delete-project,
+  .edit-project,
+  .info-project,
+  .assign-project {
+
+    @include buttons-tables;
+
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .delete-project:hover,
+  .edit-project:hover,
+  .info-project:hover,
+  .assign-project:hover {
+
+    @include hover-buttons-tables;
+
+
+  }
+}
+
+.cont-leyenda-status {
+  margin-bottom: 100px;
+}
+
+.leyenda-status {
+  display: flex;
+  margin: 5px;
+
+  p {
+    margin: 2px;
+
+    img {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .id-user-tableproject,
+  .location-project-table {
+    display: none !important;
+  }
+
+  .edit-project {
+    background-image: url("../../../public/assets/icons/edit_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .info-project {
+    background-image: url("../../../public/assets/icons/info_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .delete-project {
+    background-image: url("../../../public/assets/icons/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .assign-project {
+    background-image: url("../../../public/assets/icons/assign_company.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .status-user-tableproject {
+    .status-col {
+      display: none;
+    }
+
+    .status-col-mobile {
+      display: contents;
+      display: flex;
+
+      p {
+        display: none;
+      }
+
+      .pen-status {
+        background-color: transparent !important;
+        border: none !important;
+        padding: 0px;
+        margin-left: 3px;
+
+        img {
+          height: 18px;
+        }
+
+        .status-col-icon {
+          display: contents;
+        }
+      }
+    }
+  }
+
+  .leyenda-status {
+    display: contents !important;
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .id-user-tableproject {
+    display: none;
+  }
+
+  .leyenda-status {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .status-col-mobile {
+    display: none;
+  }
+
+  .leyenda-status {
+    display: none;
+  }
+}

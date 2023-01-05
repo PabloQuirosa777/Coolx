@@ -1,0 +1,11 @@
+@import "./mixin";
+
+.exit-statusproject-modal,
+.save-statusproject-modal {
+    @include buttons-tables;
+}
+
+.exit-statusproject-modal:hover,
+.save-statusproject-modal:hover {
+    @include hover-buttons-tables;
+}

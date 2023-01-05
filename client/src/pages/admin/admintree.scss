@@ -1,0 +1,120 @@
+@import "./mixin";
+@import"../variables";
+
+.admin-tree-title {
+  padding-top: 60px;
+
+  .admin-title {
+    padding-top: 2rem;
+    display: flex;
+
+    h1 {
+      color: $azulCoolx;
+      font-weight: bold;
+      font-family: Manrope, Arial, serif;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    button:hover {
+      background-color: transparent;
+    }
+  }
+
+  .boton-register-tree {
+    margin-bottom: 15px;
+    @include buttons-tables;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .boton-register-tree:hover {
+    @include hover-buttons-tables;
+  }
+}
+
+.barra-busq-tree {
+  margin-top: 5px;
+}
+
+.table-all-trees {
+
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+
+  border: 1px solid rgb(206, 212, 218) !important;
+
+  th {
+    background-color: $azulCoolx !important;
+    color: white;
+  }
+
+  .boton-delete-tree,
+  .boton-edit-tree {
+    @include buttons-tables;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+
+  }
+
+  .boton-delete-tree:hover,
+  .boton-edit-tree:hover {
+    @include hover-buttons-tables;
+  }
+
+
+}
+
+.table-tree-container {
+  padding-top: 44px;
+  padding-inline: 31px !important;
+  overflow: overlay !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+
+
+
+}
+
+@media only screen and (max-width: 590px) {
+
+  .latin-tree-name {
+    display: none !important;
+  }
+
+  .boton-delete-tree {
+    background-image: url("../../../public/assets/icons/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .boton-edit-tree {
+    background-image: url("../../../public/assets/icons/edit_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+
+    p {
+      display: none;
+    }
+
+  }
+}
+
+.table-tree-container::-webkit-scrollbar {
+  display: none !important;
+}

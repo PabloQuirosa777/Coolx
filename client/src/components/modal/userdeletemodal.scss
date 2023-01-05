@@ -1,0 +1,11 @@
+@import "./mixin";
+
+.exit-deleteuser-modal,
+.save-deleteuser-modal {
+    @include style-button-modal;
+}
+
+.exit-deleteuser-modal:hover,
+.save-deleteuser-modal:hover {
+    @include hover-button-modal;
+}

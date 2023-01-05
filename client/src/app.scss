@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"),
+    url(./font/Manrope-VariableFont_wght.ttf) format("truetype");
+}
+
+// Tipografía
+body {
+  font-family: Manrope, Arial, serif !important;
+  height: 100%;
+}
+
+// Color de inputs
+input,
+textarea {
+  background-color: rgb(242, 244, 246) !important;
+}

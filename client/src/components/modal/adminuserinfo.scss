@@ -1,0 +1,9 @@
+@import "./mixin";
+
+.close-modal {
+    @include style-button-modal;
+}
+
+.close-modal:hover {
+    @include hover-button-modal;
+}

@@ -1,0 +1,132 @@
+@import "../variables";
+
+.wrapper3 {
+  max-inline-size: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $azulCoolx;
+  padding: 56px;
+
+  .footer_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+
+    img {
+      width: 153px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .footer_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    img {
+      height: 20px;
+    }
+
+    .mail {
+      display: flex;
+      margin-top: 6px;
+
+      p {
+        margin-left: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer_rrss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    a {
+      img {
+        height: 24px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .legal {
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 65.5px;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+}
+
+.footer-mobile {
+  display: none !important;
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+  width: 100%;
+
+  .f-mobile-bar {
+    background-color: $azulCoolx;
+    padding-block: 1rem;
+    padding-inline: 0.5rem;
+
+    img {
+      width: 3rem;
+    }
+
+    button {
+      background: #e0ecf8 !important;
+      border: none !important;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 140%;
+      color: $azulCoolx !important;
+      height: 100%;
+
+      img {
+        width: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    display: none !important;
+  }
+
+  .footer-mobile {
+    display: initial !important;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .footer {
+    .footer_logo {
+      align-items: center;
+    }
+
+    .footer_rrss {
+      align-items: center;
+      padding-top: 2rem;
+
+      img {
+        margin-inline: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "./mixin";
+
+.exit-info-modal {
+    @include buttons-tables;
+}
+
+.exit-info-modal:hover {
+    @include hover-buttons-tables;
+}

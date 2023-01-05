@@ -1,0 +1,11 @@
+@import "./mixin";
+
+.exit-delete-tree,
+.save-delete-tree {
+    @include style-button-modal;
+}
+
+.exit-delete-tree:hover,
+.save-delete-tree:hover {
+    @include hover-button-modal;
+}

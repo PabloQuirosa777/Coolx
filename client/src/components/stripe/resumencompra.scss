@@ -1,0 +1,64 @@
+@import "../variables";
+
+.card-purchase-summary {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 24px 24px 24px !important;
+    box-shadow: 0px 2px 2px 0px #00000052;
+    margin-bottom: 5px;
+}
+
+.section-button {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 12px;
+    }
+
+    .button-access-data {
+        color: white;
+        padding: 16px;
+        background: $azulCoolxClaro !important;
+        border-radius: 80px !important;
+        border: none !important;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    hr {
+        margin: 0px !important;
+    }
+}
+
+
+
+.title-summary {
+    display: flex;
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.info-summary {
+
+    .price-summary {
+        h4 {
+            font-weight: bold !important;
+            color: black !important;
+        }
+    }
+}
+
+.estimation {
+    align-items: center;
+
+    p {
+        font-size: 12px;
+        margin-bottom: 0px !important;
+    }
+
+}

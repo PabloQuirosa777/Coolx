@@ -1,0 +1,410 @@
+$azulCoolx: #09427d;
+$azulCoolxClaro: #70bfcb;
+
+.navTop {
+  padding-top: 60px;
+}
+
+// PRIMER BLOQUE
+.fondo-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../../public/images/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.textoHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70em;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  p {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  button {
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 137px;
+    height: 44px;
+    background: $azulCoolxClaro;
+    border-radius: 80px;
+    border: none;
+    font-family: "Manrope";
+  }
+  .leerMas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}
+
+// SEGUNDO BLOQUE
+.fondoRegProject,
+.bloqueGarantizarHome {
+  background-image: url("../../../public/images/bosque1.png");
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+}
+
+.separador {
+  background-color: $azulCoolx;
+  height: 1rem;
+}
+
+.fondoBlur1 {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.infoRegProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 80px;
+  padding: 35px;
+
+  p {
+    margin-left: 32px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .wrapperRegProject {
+    max-width: 1400px;
+    padding-inline: 20px;
+    margin: auto;
+  }
+}
+
+.topInfoRegProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomInfoRegProject {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+// TERCER BLOQUE
+.iconsProceso {
+  padding-inline: 56px;
+  padding-block: 80px;
+  .text-container {
+    width: 100%;
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      margin: 0px;
+    }
+    p,
+    h4 {
+      color: $azulCoolx;
+      text-align: center;
+    }
+  }
+  .bloqueProcesoHome {
+    display: grid;
+    place-content: center;
+    margin-bottom: 56px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 110%;
+      letter-spacing: -0.02em;
+      color: $azulCoolx;
+      margin: 0px;
+    }
+  }
+}
+
+.addProject,
+.satelite,
+.carbono,
+.vision,
+.sencillex,
+.medidas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-bottom: 24px;
+  }
+}
+
+// CUARTO BLOQUE
+
+.bloqueGarantizarHome {
+  text-align: center;
+  color: white;
+
+  .tituloBloqGarant {
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 110%;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .iconsGarantizar {
+    margin-top: 56px;
+    .text-container2 {
+      width: 100%;
+      h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.01em;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+      }
+    }
+  }
+
+  .buttonBloqGarant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botonBloqGarant {
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 137px;
+    height: 44px;
+    background: $azulCoolxClaro;
+    border-radius: 80px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+  }
+}
+
+.fondoBlur2 {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  padding-inline: 0px !important;
+  padding-inline: 56px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+// BLOQUE CINCO
+.wrapper-low {
+  max-inline-size: 1400px;
+  margin: auto;
+  position: relative;
+  .bloqueColabs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-block: 56px;
+    h4 {
+      color: $azulCoolx;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+  }
+}
+
+// HOME EN MOBILE
+@media only screen and (max-width: 576px) {
+  // QUINTO BLOQUE
+  .wrapper-low {
+    .bloqueColabs {
+      height: 100vh;
+      padding-block: 2rem !important;
+    }
+  }
+  .bloqueColabs {
+    height: calc(100vh - 140px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // PRIMER BLOQUE
+  .fondo-home,
+  .fondoRegProject,
+  .bloqueGarantizarHome,
+  .iconsProceso {
+    height: calc(100vh - 140px);
+  }
+
+  // SEGUNDO BLOQUE
+  .fondoRegProject {
+    .separador {
+      display: none;
+    }
+    .fondoBlur1 {
+      height: 100%;
+      .infoRegProject {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        .wrapperRegProject {
+          padding-inline: 1rem;
+        }
+      }
+    }
+  }
+
+  .topInfoRegProject,
+  .bottomInfoRegProject {
+
+    img {
+      width: 40%;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0px;
+      font-size: 1rem;
+    }
+  }
+
+  .forMobile {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4vh !important;
+  }
+
+  // TERCER BLOQUE
+  .iconsProceso {
+    padding-block: 2rem;
+    padding-inline: 0px;
+    .bloqueProcesoHome {
+      margin-bottom: 1rem;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+    .addProject,
+    .satelite,
+    .carbono {
+      padding: 0px !important;
+      flex-direction: row !important;
+      img {
+        width: 20vw;
+        margin-bottom: 0px;
+        align-items: center;
+      }
+      .text-container {
+        width: 75%;
+      }
+      p {
+        text-align: left;
+      }
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 2px;
+        text-align: left;
+      }
+    }
+  }
+
+  // CUARTO BLOQUE
+  .bloqueGarantizarHome {
+    .fondoBlur2 {
+      height: 100%;
+      padding-block: 2rem;
+      padding-inline: 0px;
+      .tituloBloqGarant {
+        margin-bottom: 1rem;
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .vision,
+      .sencillex,
+      .medidas {
+        padding: 0px !important;
+        flex-direction: row !important;
+        img {
+          width: 20vw;
+          margin-bottom: 0px;
+          align-items: center;
+        }
+        .text-container2 {
+          width: 75%;
+        }
+        p {
+          text-align: left;
+        }
+        h4 {
+          font-size: 1rem;
+          margin-bottom: 2px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

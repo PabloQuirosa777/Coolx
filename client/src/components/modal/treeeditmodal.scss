@@ -1,0 +1,17 @@
+@import "./mixin";
+
+.tree-edit-modal {
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.exit-edit-tree,
+.save-edit-tree {
+    @include style-button-modal;
+}
+
+.exit-edit-tree:hover,
+.save-edit-tree:hover {
+    @include hover-button-modal;
+}

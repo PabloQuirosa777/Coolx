@@ -1,0 +1,90 @@
+@import "../variables";
+
+.cardCost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0ecf8;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0px 2px 2px 0px #00000052;
+
+  .tituloCost {
+    display: flex;
+
+    p {
+      color: $azulCoolx;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    img {
+      height: 1rem;
+    }
+  }
+
+  .coste,
+  .ganancias {
+    width: 100%;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      margin: 0px;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 55px !important;
+    }
+  }
+
+  .more-info {
+    color: white;
+    padding: 12px 24px;
+    border-radius: 80px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .more-data {
+    background: #70bfcb !important;
+  }
+
+  .more-data:hover {
+    background-color: white !important;
+    color: $azulCoolx !important;
+    box-shadow: inset 0 0 0 2px $azulCoolxClaro !important;
+  }
+
+  .loading-data {
+    background-color: grey !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cardCost {
+    margin-top: 8px !important;
+
+    .coste,
+    .ganancias {
+      div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+    }
+  }
+}
